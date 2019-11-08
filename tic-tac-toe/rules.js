@@ -175,12 +175,12 @@ function play() {
 				if(board_state[i] == -1){
 					if(whose_move()){ //true is 0, 0 is player 1
 						document.getElementById(table_ids[i]).innerHTML = 'X';
-						//toggle_move();
+						toggle_move();
 						document.getElementById("turn_info").innerHTML = "Turn for: "+"O".bold();
 						board_state[i] = 0;
 					}else{
 						document.getElementById(table_ids[i]).innerHTML = 'O';
-						//toggle_move();
+						toggle_move();
 						document.getElementById("turn_info").innerHTML = "Turn for: "+"X".bold();
 						board_state[i] = 1;
 					}
